@@ -127,6 +127,7 @@ input {
 
 .right-side {
   display: flex;
+  gap: 10px;
 }
 
 .hero {
@@ -297,6 +298,7 @@ input {
   border-radius: 26px;
   border: none;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .product-name {
