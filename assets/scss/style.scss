@@ -1,0 +1,964 @@
+:root {
+  --color-ivory: #fcffe9;
+  --color-black: #000;
+  --color-icterine: #ecff62;
+  --color-Cal-Poly-Pomona-Green: #1b4e1f;
+  --color-Burnt-Sienna: #e56c46;
+  --color-Eggshell: #f4edd1;
+  --color-Chinese-White: #e2e7e0;
+  --color-Alabaster: #ecf2ea;
+  --color-Dutch-White: #eddcc1;
+  --Laurel-Green: #a0b79c;
+  --color-Burnt-Sienna: #e56c46;
+  --color-Light-Steel-Blue: #aac9dc;
+  --color-white: #fff;
+  --color-Isabelline: #f6f2f0;
+}
+
+@font-face {
+  font-family: "Archia";
+  src: url("../fonts/archia-regular-webfont.eot");
+  src: url("../fonts/archia-regular-webfont.woff2") format("woff2");
+}
+
+header {
+  background-color: var(--color-ivory);
+}
+body {
+  padding: 0%;
+  margin: 0%;
+  background-color: var(--color-ivory);
+  overflow-x: hidden;
+  font-family: "Archia";
+}
+
+button,
+input {
+  font-family: "Archia";
+}
+
+.header {
+  position: static;
+  border-bottom: 1px solid var(--color-black);
+  padding: 0%;
+  margin: 0%;
+  height: 66px;
+}
+
+.globe-icon {
+  display: none !important;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 8;
+  border-radius: 25px;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.dropdown-menu:hover .dropdown-content {
+  display: block;
+}
+
+.hamburger-icon {
+  padding: 15px;
+}
+
+.dropdown-language {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 10;
+  border-radius: 25px;
+  right: 0;
+}
+
+.language-section:hover .dropdown-language {
+  display: block;
+}
+
+.dropdown-content ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.dropdown-content li {
+  line-height: 25px;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+}
+
+.dropdown-content-desktop {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  justify-self: center;
+  height: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.buy-button {
+  display: none;
+  background-color: var(--color-black);
+  color: var(--color-icterine);
+  padding: 18px 25px;
+  border-radius: 15px;
+}
+
+.right-side {
+  display: flex;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  background-color: var(--color-ivory);
+}
+
+.hero-img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-background {
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 75%;
+}
+
+.hero-heading {
+  position: relative;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  padding: 20px 20px 0px 20px;
+  margin-top: -150px;
+  z-index: 4;
+  color: var(--color-black);
+}
+
+.hero-subtitle {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  color: var(--color-black);
+  z-index: 6;
+  margin-top: -20px;
+  padding: 5px 20px 0px 20px;
+}
+
+.hero-button {
+  position: relative;
+  text-align: center;
+  background-color: var(--color-black);
+  color: var(--color-icterine);
+  font-size: 18px;
+  border-radius: 22px;
+  padding: 24px;
+  width: 200px;
+  height: 68px;
+  z-index: 7;
+  cursor: pointer;
+}
+
+.about {
+  text-align: center;
+  font-size: 16px;
+  background-color: var(--color-ivory);
+  margin-bottom: 20px;
+}
+
+.batch-number {
+  background-color: var(--color-Cal-Poly-Pomona-Green);
+  color: var(--color-icterine);
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+.matcha-facts {
+  font-size: 22px;
+  padding: 0px 20px 20px 20px;
+}
+
+.matcha-introduction {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.about-cards {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 160px;
+}
+
+.about-card img {
+  width: 66%;
+  height: 66%;
+}
+
+.about-card p {
+  position: relative;
+  font-size: 14px;
+  font-weight: 200;
+  color: var(--color-black);
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-black);
+  border-radius: 100px;
+  width: 125px;
+  height: 125px;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Eggshell);
+  border-top: 1px solid var(--color-black);
+}
+
+.product-card {
+  padding: 32px 16px;
+  border-bottom: 1px solid var(--color-black);
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+
+.product-img {
+  width: 100%;
+  height: 300px;
+
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  border: 1px solid var(--color-black);
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+#welcome-pack-img {
+  background-image: url("/assets/images/welcome-pack.jpeg");
+}
+
+#refill-pack-img {
+  background-image: url(/assets/images/refill-pack.jpeg);
+}
+
+.product-price {
+  background-color: var(--color-Burnt-Sienna);
+  color: var(--color-black);
+  padding: 10px 15px;
+  border-radius: 26px;
+  border: none;
+  font-weight: bold;
+}
+
+.product-name {
+  font-size: 34px;
+  margin: 0;
+}
+
+.product-facts {
+  margin: 0;
+}
+.product-description {
+  display: flex;
+  align-items: flex-start;
+  margin: 25px 0px 0px;
+}
+
+.partners {
+  background-color: var(--Chinese-White);
+  padding: 50px;
+  text-align: center;
+}
+
+.partners-logo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-logo img {
+  display: inline-block;
+  width: 80px;
+  height: 25px;
+  padding-left: 20px 0px 0px;
+}
+
+.benefits {
+  background-color: var(--color-Alabaster);
+  padding: 40px 20px;
+  border-top: 1px solid var(--color-black);
+}
+
+.benefits-img {
+  width: 100%;
+  height: 300px;
+  background-image: url(/assets/images/benefits-img.jpg);
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  border: 1px solid var(--color-black);
+  border-radius: 45px;
+}
+
+.health-benefits-subtitle {
+  font-size: 34px;
+  margin: 20px 0px;
+}
+
+.health-benefits-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.health-benefits-fact {
+  border: 1px solid var(--color-black);
+  border-radius: 50px;
+  padding: 8px 20px 8px 15px;
+  margin: 0px 10px 10px 0px;
+  width: fit-content;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.health-benefits-fact span {
+  font-size: 16px;
+  padding: 0;
+}
+
+.health-benefits-fact img {
+  width: 30px;
+  height: auto;
+}
+
+.benefits-know-more {
+  border: 1px solid var(--color-black);
+  border-radius: 20px;
+  border-bottom: 4px solid var(--color-black);
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  height: 100%;
+  width: auto;
+}
+
+.benefits-look-here {
+  border-bottom: 1px solid var(--color-black);
+  background-color: var(--color-Dutch-White);
+  object-fit: cover;
+  margin: 0;
+  font-size: 14px;
+  padding: 0px 20px;
+  line-height: 19px;
+  font-weight: bold;
+}
+.benefits-look-here p {
+  margin: 0;
+}
+
+.matcha-tea {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.matcha-tea p {
+  margin: 0;
+}
+
+.matcha-combine-flavours {
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-black);
+  padding: 70px 20px;
+}
+
+.matcha-combine-flavours-subtitle {
+  font-size: 35px;
+  margin: 0;
+}
+
+.matcha-flavours {
+  display: block;
+}
+
+.matcha-description-card {
+  width: 100%;
+  height: 45vw;
+  min-height: 450px;
+  max-height: 675px;
+  border: 1px solid var(--color-black);
+  border-radius: 45px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: stretch;
+  cursor: pointer;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.matcha-description-card:hover {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #d6d3c8;
+  transform: scale(1.01);
+}
+
+#matcha-lemonade-description:hover {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #d6d3c8;
+}
+
+#matcha-lemonade-description {
+  background-color: var(--Laurel-Green);
+}
+
+#caramel-matcha-description {
+  background-color: var(--color-Burnt-Sienna);
+}
+
+#caramel-matcha-description:hover {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #d6d3c8;
+}
+
+#coconut-pineapple-smoothie-description:hover {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #d6d3c8;
+}
+
+#coconut-pineapple-smoothie-description {
+  background-color: var(--color-Light-Steel-Blue);
+}
+
+.matcha-lemonade-img {
+  background-image: url(/assets/images/matcha-lemonade.jpeg);
+  border: 1px solid var(--color-black);
+  border-radius: 35px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.caramel-matcha-img {
+  background-image: url(/assets/images/caramel-matcha.jpeg);
+  border: 1px solid var(--color-black);
+  border-radius: 35px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.coconut-pineapple-smoothie-img {
+  background-image: url(/assets/images/coconut-pineapple-matcha.jpeg);
+  border: 1px solid var(--color-black);
+  border-radius: 35px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.matcha-flavour-info {
+  padding: 25px 25px 15px;
+}
+.matcha-flavour-title {
+  font-size: 24px;
+  color: var(--color-black);
+  padding: 5px 0;
+  margin: 0;
+}
+
+.matcha-flavour-paragraph {
+  font-size: 16px;
+  color: var(--color-black);
+  margin: 0;
+}
+
+.matcha-owners-description {
+  border: 1px solid var(--color-black);
+  padding: 55px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-Isabelline);
+}
+.matcha-owners-holder {
+  display: block;
+}
+
+.matcha-owners-subtitle {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.matcha-owners-info {
+  font-size: 16px;
+  position: relative;
+}
+
+.matcha-owners-info img {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0;
+}
+
+.social-media-container {
+  padding: 100px 16px 32px;
+  background-color: var(--color-black);
+  color: var(--color-Isabelline);
+}
+
+.lets-connect {
+  text-align: center;
+}
+
+.lets-connect-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.lets-connect-paragraph {
+  font-size: 16px;
+}
+
+.social-media-holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-media-card {
+  background-color: var(--color-Isabelline);
+  border-radius: 25px;
+  width: 100px;
+  height: 120px;
+  margin-bottom: 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-black);
+  font-size: 18px;
+}
+
+.social-media-card:hover {
+  box-shadow: 2px 2px 0 0 #796960;
+  transform: rotate(0) !important;
+}
+
+.social-media-logo {
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  height: 95px;
+  width: 100px;
+  border-radius: 20px;
+}
+.social-media-names {
+  margin: 0;
+}
+
+#instagram-logo {
+  background-image: url(/assets/images/instagram-img.jpg);
+}
+
+#tiktok-logo {
+  background-image: url(/assets/images/tiktok-img.jpg);
+}
+
+#pinterest-logo {
+  background-image: url(/assets/images/pinterest-img.jpg);
+}
+
+#spotify-logo {
+  background-image: url(/assets/images/spotify-img.jpg);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-container a {
+  text-decoration: none;
+  color: var(--color-Isabelline);
+}
+
+.contact-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.contact-container ul li {
+  line-height: 30px;
+  padding: 8px 12px;
+}
+
+.chat-icons {
+  border: 1px solid var(--color-Isabelline);
+  padding: 12px 15px 12px 15px;
+  border-radius: 10px;
+}
+
+.footer-wraper {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-top: 1px solid var(--color-white);
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+}
+.privacy-policy span {
+  padding: 20px;
+}
+.privacy-policy {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.copy-rights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .globe-icon {
+    display: block !important;
+  }
+
+  .hero-heading {
+    margin-top: -90px;
+  }
+
+  .right-side i {
+    padding-right: 10px;
+  }
+
+  .right-side {
+    display: flex;
+    align-items: center;
+  }
+
+  .buy-button {
+    display: block;
+  }
+
+  .hamburger-icon {
+    display: none !important;
+  }
+
+  .dropdown-content-desktop {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 8;
+    border-radius: 25px;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    right: 20px;
+    top: 50px;
+  }
+
+  .dropdown-menu-desktop:hover .dropdown-content-desktop {
+    display: block;
+  }
+
+  .dropdown-content-desktop ul {
+    list-style: none;
+    padding-left: 5px;
+  }
+
+  .dropdown-content-desktop li {
+    line-height: 25px;
+  }
+
+  .dropdown-content-desktop a {
+    text-decoration: none;
+  }
+
+  .hamburger-icon-desktop {
+    display: block;
+    padding: 15px;
+  }
+
+  .img {
+    height: 68px;
+  }
+
+  .matcha-introduction {
+    font-size: 32px;
+  }
+
+  .matcha-facts {
+    font-size: 30px;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product-card {
+    border-left: 1px solid var(--color-black);
+    padding: 55px;
+  }
+
+  .product-img {
+    height: 45vw;
+  }
+
+  #refill-pack-img:hover {
+    background-image: url(/assets/images/refill-pack-2.jpeg);
+    cursor: pointer;
+  }
+  #welcome-pack-img:hover {
+    background-image: url(/assets/images/welcome-pack-2.jpeg);
+    cursor: pointer;
+  }
+
+  .partners-logo img {
+    width: 85px;
+    height: 50px;
+  }
+
+  .partners-logo {
+    gap: 20px;
+  }
+
+  .benefits-img {
+    height: 580px;
+  }
+
+  .benefits {
+    display: grid;
+    grid-template-columns: 45vw 1fr;
+    grid-column-gap: 40px;
+  }
+
+  .health-benefits-subtitle {
+    margin: 10px;
+    font-size: 44px;
+  }
+
+  .health-benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .health-benefits-facts {
+    margin: 15px 0;
+  }
+
+  .benefits-know-more {
+    width: auto;
+    height: 100px;
+  }
+  .benefits-look-here {
+    padding: 10px 20px;
+    line-height: 19px;
+    font-weight: bold;
+  }
+
+  .matcha-tea {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .matcha-tea p {
+    margin: 0;
+  }
+
+  .matcha-combine-flavours {
+    padding: 120px 50px;
+  }
+  .matcha-combine-flavours-description {
+    padding-left: 30px;
+  }
+
+  .matcha-flavours {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45vw;
+    padding: 15px;
+  }
+
+  .matcha-combine-flavours-subtitle {
+    font-size: 45px;
+  }
+
+  .matcha-combine-flavours-description p {
+    font-size: 18px;
+    margin: 0 0 15px;
+  }
+
+  #matcha-lemonade-description {
+    margin-right: 30px;
+  }
+
+  #caramel-matcha-description {
+    margin-right: 30px;
+  }
+  .matcha-flavour-title {
+    font-size: 30px;
+  }
+  #matcha-owners-description {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .matcha-owners-holder {
+    display: grid;
+    margin-bottom: 100px;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 5vw;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .matcha-owners-subtitle {
+    font-size: 45px;
+  }
+
+  .matcha-owners-info {
+    font-size: 18px;
+  }
+
+  .social-media-holder {
+    margin-bottom: 100px;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-container ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .contact-container li:hover {
+    border: 1px solid var(--Eggshell);
+    border-radius: 15px;
+    padding: 8px 12px;
+  }
+
+  .chat-icons {
+    box-sizing: border-box;
+    height: 45px;
+  }
+
+  .lets-connect-title {
+    font-size: 60px;
+    margin: 0;
+  }
+
+  .lets-connect-paragraph {
+    font-size: 18px;
+    margin: 0 0 50px;
+  }
+
+  .footer-wraper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 20px;
+    font-size: 20px;
+    padding: 0;
+  }
+  .privacy-policy {
+    display: flex;
+    justify-content: center;
+    order: 3;
+  }
+
+  .copy-rights {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid var(--color-white);
+  }
+
+  .footer-logo {
+    border-right: 1px solid var(--color-white);
+  }
+}
